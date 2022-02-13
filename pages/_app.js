@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
     const web3Modal = new Web3Modal({
       network: 'mainnet',
       cacheProvider: false,
+      theme: 'dark',
       providerOptions: {
         walletconnect: {
           package: WalletConnectProvider,
@@ -43,12 +44,7 @@ function MyApp({ Component, pageProps }) {
         <div className='flex border-b-2 py-5 px-8'>
           <Link href='/'>
             <a>
-              <img
-                src='/logo.svg'
-                className='bg-blue-500'
-                alt='React Logo'
-                style={{ width: '50px' }}
-              />
+              <img src='/favicon.ico' alt='React Logo' style={{ width: '50px' }} />
             </a>
           </Link>
           <Link href='/'>

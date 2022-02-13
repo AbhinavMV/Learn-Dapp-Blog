@@ -6,8 +6,9 @@ This a blockchain learning projects
 - npm install ethers hardhat @nomiclabs/hardhat-waffle \
   ethereum-waffle chai @nomiclabs/hardhat-ethers \
   web3modal @walletconnect/web3-provider \
-  easymde react-markdown react-simplemde-editor \
   ipfs-http-client @openzeppelin/contracts
+- For Markdown editor
+  - npm install easymde react-markdown react-simplemde-editor
 - Initialize hardhat
   - npx hardhat
   - then configure the hardhat.config file for local development

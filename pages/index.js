@@ -17,6 +17,7 @@ export default function Home(props) {
   const account = useContext(AccountContext)
 
   const router = useRouter()
+
   async function navigate() {
     router.push('/create-post')
   }
@@ -32,7 +33,7 @@ export default function Home(props) {
                 <div className='border-2 mt-5 rounded-lg flex'>
                   <p className='text-xl font-semibold cursor-pointer m-0 p-5'>{post[1]}</p>
                   <div className='flex flex-1 justify-end pr-5'>
-                    <img className='w-6 bg-red-500' src='/right-arrow.svg' alt='Right arrow' />
+                    <img className='w-10 h-10 m-4 rotate-90' src='/favicon.ico' alt='Right arrow' />
                   </div>
                 </div>
               </a>
@@ -49,7 +50,7 @@ export default function Home(props) {
             onClick={navigate}
           >
             Create your first post
-            <img className='w-8 ml-7 bg-red-500' src='/right-arrow.svg' alt='Right arrow' />
+            <img className='w-8 ml-7 rotate-90' src='/favicon.ico' alt='Right arrow' />
           </button>
         )}
       </div>
